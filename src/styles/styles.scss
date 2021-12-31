@@ -1,0 +1,99 @@
+$light-grey: rgba(255, 255, 255, .5);
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+.wrapper {
+    width: 350px;
+    height: 595px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    box-shadow: 0px 17px 2px 15px rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 25px 25px 30px 25px;
+    box-sizing: border-box;
+    text-align: left;
+    div {
+        img {
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            padding: 0px;
+        }
+    }
+    .wrapperTitle {
+            color: white;
+            font-weight: 600;
+            font-size: 20px;
+        }
+    .wrapperDesc {
+        color: $light-grey;
+        font-size: 18px;
+        font-weight: 300;
+    }
+    .wrapperDivider {
+        width: 100%;
+        hr {
+            border: none;
+            height: .5px;
+            color: rgba(255, 255, 255, .1);
+            background-color: rgba(255, 255, 255, .1);
+        }
+    }
+    .wrapperCreator {
+        margin-top: -10px;
+        color: white;
+        font-weight: 600;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            height: 30px;
+            width: 30px;
+            border-style: solid;
+            border-color: white;
+            border-radius: 50%;
+            border-width: 1px;
+            margin-right: 15px;
+        }
+        span {
+            color: $light-grey;
+        }
+    }
+    .wrapperSpecs {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .time {
+            color: $light-grey;
+            img {
+                height: 14px;
+                width: 14px;
+                padding-right: 5px;
+            }
+        }
+        .cost {
+            color: hsl(178, 100%, 50%);
+            font-weight: 600;
+            letter-spacing: .025px;
+            img {
+                height: 14px;
+                width: 8px;
+                padding-right: 5px;
+            }
+        }
+    }
+}
