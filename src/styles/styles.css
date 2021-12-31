@@ -15,7 +15,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 .wrapper {
@@ -69,7 +69,7 @@ body {
 
 .wrapper .wrapperDivider hr {
   border: none;
-  height: .5px;
+  height: 0.5px;
   color: rgba(255, 255, 255, 0.1);
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -119,6 +119,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .wrapper .wrapperSpecs .time {
@@ -134,12 +137,57 @@ body {
 .wrapper .wrapperSpecs .cost {
   color: #00fff7;
   font-weight: 600;
-  letter-spacing: .025px;
+  letter-spacing: 0.025px;
 }
 
 .wrapper .wrapperSpecs .cost img {
   height: 14px;
   width: 8px;
   padding-right: 5px;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper {
+    width: 325px;
+    height: 545px;
+  }
+  .wrapper .wrapperTitle {
+    font-size: 21px;
+  }
+  .wrapper .wrapperImage {
+    padding-bottom: 15px;
+  }
+  .wrapper .wrapperDesc {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .wrapper div img {
+    width: 275px;
+    height: 275px;
+  }
+  .wrapper .wrapperCreator img {
+    height: 34px;
+    width: 34px;
+  }
+  .wrapper .wrapperSpecs {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: -16px;
+  }
+  .wrapper .wrapperSpecs .specsSpan {
+    display: inline-block;
+  }
+  .wrapper .wrapperSpecs .time img {
+    margin-top: -5px;
+    margin-right: 3px;
+    height: 18px;
+    width: 24px;
+  }
+  .wrapper .wrapperSpecs .cost img {
+    margin-top: -5px;
+    margin-right: 3px;
+    height: 18px;
+    width: 16px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
