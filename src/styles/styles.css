@@ -124,13 +124,17 @@ body {
           align-items: center;
 }
 
+.wrapper .wrapperSpecs .specsSpan {
+  display: inline-block;
+}
+
 .wrapper .wrapperSpecs .time {
   color: rgba(255, 255, 255, 0.5);
 }
 
 .wrapper .wrapperSpecs .time img {
   height: 14px;
-  width: 14px;
+  width: 19px;
   padding-right: 5px;
 }
 
@@ -142,7 +146,7 @@ body {
 
 .wrapper .wrapperSpecs .cost img {
   height: 14px;
-  width: 8px;
+  width: 13px;
   padding-right: 5px;
 }
 
