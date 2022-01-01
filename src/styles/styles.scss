@@ -1,5 +1,7 @@
 $light-grey: rgba(255, 255, 255, 0.5);
 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
 body {
   height: 100vh;
   width: 100vw;
@@ -28,19 +30,22 @@ body {
     img {
       width: 300px;
       height: 300px;
-      border-radius: 10px;
+      border-radius: 8px;
       padding: 0px;
     }
   }
   .wrapperTitle {
     color: white;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 22px;
+    margin-top: 3px;
   }
   .wrapperDesc {
     color: $light-grey;
     font-size: 18px;
     font-weight: 300;
+    margin-top: -1px;
+    line-height: 27px;
   }
   .wrapperDivider {
     width: 100%;
@@ -78,24 +83,36 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: 5px;
+    margin-bottom: -1px;
     .specsSpan {
       display: inline-block;
     }
     .time {
       color: $light-grey;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
       img {
-        height: 14px;
-        width: 19px;
-        padding-right: 5px;
+        //vertical-align: middle;
+        height: 17px;
+        width: 17px;
+        padding-right: 7px;
       }
     }
     .cost {
       color: hsl(178, 100%, 50%);
       font-weight: 600;
-      letter-spacing: 0.025px;
+      letter-spacing: 1px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
       img {
-        height: 14px;
-        width: 13px;
+        //vertical-align: middle;
+        height: 15px;
+        width: 10px;
         padding-right: 5px;
       }
     }
